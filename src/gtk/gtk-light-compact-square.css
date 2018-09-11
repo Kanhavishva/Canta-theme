@@ -46,7 +46,7 @@ notebook:focus tab,
 }
 
 .background.csd {
-  border-radius: 0 0 8px 8px;
+  border-radius: 0 0 2px 2px;
 }
 
 .background.maximized, .background.solid-csd {
@@ -162,7 +162,7 @@ assistant .sidebar {
 }
 
 assistant .sidebar label {
-  min-height: 32px;
+  min-height: 26px;
   padding: 0 12px;
   color: rgba(0, 0, 0, 0.38);
   font-weight: 500;
@@ -205,7 +205,7 @@ spinner:checked:disabled {
  ****************/
 spinbutton:not(.vertical),
 entry {
-  min-height: 32px;
+  min-height: 26px;
   padding: 0 8px;
   border-radius: 6px;
   transition: all 270ms cubic-bezier(0, 0, 0.2, 1), box-shadow 180ms cubic-bezier(0, 0, 0.2, 1);
@@ -272,14 +272,14 @@ entry image:disabled {
 
 spinbutton:not(.vertical) image.left,
 entry image.left {
-  margin-left: 0px;
+  margin-left: -3px;
   margin-right: 6px;
 }
 
 spinbutton:not(.vertical) image.right,
 entry image.right {
   margin-left: 6px;
-  margin-right: 0px;
+  margin-right: -3px;
 }
 
 spinbutton:not(.vertical) undershoot.left,
@@ -469,7 +469,7 @@ treeview entry.flat, treeview entry.flat:focus, treeview entry, treeview entry:f
 }
 
 .entry-tag, .documents-entry-tag, .photos-entry-tag {
-  margin: 4px;
+  margin: 1px;
   border-radius: 9999px;
   box-shadow: none;
   background-color: #00CE99;
@@ -482,13 +482,13 @@ treeview entry.flat, treeview entry.flat:focus, treeview entry, treeview entry:f
 
 :dir(ltr) .entry-tag, :dir(ltr) .documents-entry-tag, :dir(ltr) .photos-entry-tag {
   margin-left: 8px;
-  margin-right: -4px;
+  margin-right: -7px;
   padding-left: 8px;
   padding-right: 4px;
 }
 
 :dir(rtl) .entry-tag, :dir(rtl) .documents-entry-tag, :dir(rtl) .photos-entry-tag {
-  margin-left: -4px;
+  margin-left: -7px;
   margin-right: 8px;
   padding-left: 4px;
   padding-right: 8px;
@@ -519,7 +519,7 @@ treeview entry.flat, treeview entry.flat:focus, treeview entry, treeview entry:f
 button {
   min-height: 24px;
   min-width: 16px;
-  padding: 4px 8px;
+  padding: 1px 5px;
   border-radius: 6px;
   font-weight: 500;
   transition: all 270ms cubic-bezier(0, 0, 0.2, 1), box-shadow 180ms cubic-bezier(0, 0, 0.2, 1), background-size 450ms cubic-bezier(0, 0, 0.2, 1), background-image 900ms cubic-bezier(0, 0, 0.2, 1);
@@ -641,17 +641,17 @@ button.text-button {
 
 button.image-button {
   min-width: 24px;
-  padding: 4px;
+  padding: 1px;
 }
 
 
 button.text-button.image-button label:first-child {
-  margin-left: 12px;
+  margin-left: 15px;
 }
 
 
 button.text-button.image-button label:last-child {
-  margin-right: 12px;
+  margin-right: 15px;
 }
 
 
@@ -724,12 +724,12 @@ button.flat:checked:disabled {
 
 
 button.osd {
-  padding: 10px 14px;
+  padding: 7px 11px;
 }
 
 
 button.osd.image-button {
-  padding: 10px;
+  padding: 7px;
 }
 
 
@@ -836,8 +836,8 @@ button.text-button {
 
 .stack-switcher >
 button.image-button {
-  padding-left: 2px;
-  padding-right: 2px;
+  padding-left: -1px;
+  padding-right: -1px;
 }
 
 .stack-switcher >
@@ -870,8 +870,8 @@ button.circular {
 }
 
 spinbutton:not(.vertical) button, notebook > header tab button.flat, button.sidebar-button, .nautilus-window .floating-bar button, .gedit-document-panel row button.flat, .gedit-search-slider button:dir(ltr), .gedit-search-slider button:dir(rtl), .pluma-window paned.horizontal box.vertical box.horizontal button.flat {
-  min-height: 20px;
-  min-width: 20px;
+  min-height: 14px;
+  min-width: 14px;
   padding: 0;
   border-radius: 9999px;
   -gtk-outline-radius: 9999px;
@@ -931,7 +931,7 @@ spinbutton:not(.vertical) button, notebook > header tab button.flat, button.side
 /* menu buttons */
 modelbutton.flat,
 .menuitem.button.flat {
-  min-height: 28px;
+  min-height: 22px;
   padding: 0 8px;
   border-radius: 6px;
   color: inherit;
@@ -954,8 +954,8 @@ modelbutton.flat arrow.right {
 }
 
 button.color {
-  min-height: 20px;
-  min-width: 20px;
+  min-height: 14px;
+  min-width: 14px;
   padding: 6px;
 }
 
@@ -1003,7 +1003,7 @@ spinbutton:not(.vertical) {
 
 notebook > stack:not(:only-child) spinbutton:not(.vertical) entry, notebook > stack:not(:only-child) spinbutton:not(.vertical) entry:focus, notebook > stack:not(:only-child) spinbutton:not(.vertical) entry:disabled,
 spinbutton:not(.vertical) entry {
-  min-width: 28px;
+  min-width: 22px;
   margin: 0;
   border-image: none;
   border-radius: 0;
@@ -1032,14 +1032,14 @@ spinbutton.vertical:drop(active) {
 }
 
 spinbutton.vertical entry {
-  min-height: 32px;
-  min-width: 44px;
+  min-height: 26px;
+  min-width: 38px;
   padding: 0;
 }
 
 spinbutton.vertical button {
-  min-height: 32px;
-  min-width: 44px;
+  min-height: 26px;
+  min-width: 38px;
   padding: 0;
 }
 
@@ -1077,11 +1077,11 @@ combobox button.combo:checked {
 }
 
 combobox button.combo cellview:dir(ltr) {
-  margin-left: 0px;
+  margin-left: 3px;
 }
 
 combobox button.combo cellview:dir(rtl) {
-  margin-right: 0px;
+  margin-right: 3px;
 }
 
 combobox #gtk-combobox-popup-menu {
@@ -1089,7 +1089,7 @@ combobox #gtk-combobox-popup-menu {
 }
 
 combobox #gtk-combobox-popup-menu menuitem {
-  min-height: 28px;
+  min-height: 22px;
   padding: 0 8px;
 }
 
@@ -1213,7 +1213,7 @@ searchbar,
 }
 
 actionbar {
-  border-radius: 0 0 8px 8px;
+  border-radius: 0 0 2px 2px;
 }
 
 /***************
@@ -1222,7 +1222,7 @@ actionbar {
 .titlebar:not(headerbar),
 headerbar {
   transition: background-color 180ms cubic-bezier(0, 0, 0.2, 1), color 270ms cubic-bezier(0, 0, 0.2, 1);
-  min-height: 44px;
+  min-height: 38px;
   padding: 0 6px;
   box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.12), 0 5px 5px -5px rgba(0, 0, 0, 0.06), inset 0 1px rgba(255, 255, 255, 0.4);
   background-color: #FFFFFF;
@@ -1452,7 +1452,7 @@ headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button.text-but
   transition: none;
   box-shadow: none;
   outline-offset: -6px;
-  -gtk-outline-radius: 6px;
+  -gtk-outline-radius: 0px;
 }
 
 .titlebar:not(headerbar) .linked:not(.vertical).path-bar > button:hover, .titlebar:not(headerbar) .linked:not(.vertical).path-bar > button.text-button:hover, .titlebar:not(headerbar) .linked:not(.vertical).path-bar > button.image-button:hover, .titlebar:not(headerbar) .linked:not(.vertical).path-bar > button.text-button.image-button:hover,
@@ -1643,14 +1643,14 @@ headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button.text-but
 .titlebar:not(headerbar) .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child,
 headerbar .linked:not(.vertical).path-bar > button:only-child,
 headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child {
-  border-radius: 8px;
+  border-radius: 2px;
 }
 
 .titlebar:not(headerbar) .linked:not(.vertical).path-bar > button:first-child,
 .titlebar:not(headerbar) .linked:not(.vertical):not(.path-bar).stack-switcher > button:first-child,
 headerbar .linked:not(.vertical).path-bar > button:first-child,
 headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:first-child {
-  border-radius: 8px 0 0 8px;
+  border-radius: 2px 0 0 2px;
   padding-left: 8px;
 }
 
@@ -1658,7 +1658,7 @@ headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:first-ch
 .titlebar:not(headerbar) .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child,
 headerbar .linked:not(.vertical).path-bar > button:last-child,
 headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child {
-  border-radius: 0 8px 8px 0;
+  border-radius: 0 2px 2px 0;
   padding-right: 8px;
 }
 
@@ -1688,7 +1688,7 @@ headerbar {
 
 .default-decoration.titlebar:not(headerbar),
 headerbar.default-decoration {
-  min-height: 20px;
+  min-height: 14px;
   padding: 6px 12px;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.4);
 }
@@ -1725,8 +1725,8 @@ headerbar button {
 }
 
 headerbar switch {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 7px;
+  margin-bottom: 7px;
 }
 
 headerbar spinbutton button {
@@ -1736,8 +1736,8 @@ headerbar spinbutton button {
 
 .titlebar,
 .titlebar .background {
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
 }
 
 .background.tiled .titlebar,
@@ -1753,16 +1753,16 @@ headerbar spinbutton button {
 
 window separator:first-child + headerbar,
 window headerbar:first-child {
-  border-top-left-radius: 8px;
+  border-top-left-radius: 2px;
 }
 
 window headerbar:last-child {
-  border-top-right-radius: 8px;
+  border-top-right-radius: 2px;
 }
 
 window stack headerbar:first-child, window stack headerbar:last-child {
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
 }
 
 window.tiled headerbar, window.tiled headerbar:first-child, window.tiled headerbar:last-child, window.tiled headerbar:only-child,
@@ -1823,8 +1823,8 @@ window.csd > .titlebar:not(headerbar) {
  ************/
 .caja-pathbar button,
 .path-bar button {
-  padding-left: 4px;
-  padding-right: 4px;
+  padding-left: 1px;
+  padding-right: 1px;
 }
 
 .caja-pathbar button label:not(:only-child):first-child,
@@ -1941,7 +1941,7 @@ treeview.view.expander:selected:disabled {
 }
 
 treeview.view.progressbar {
-  border-bottom: 4px solid #00CE99;
+  border-bottom: 2px solid #00CE99;
   box-shadow: none;
   background-color: transparent;
 }
@@ -1951,7 +1951,7 @@ treeview.view.progressbar:selected {
 }
 
 treeview.view.trough {
-  border-bottom: 4px solid rgba(0, 206, 153, 0.3);
+  border-bottom: 2px solid rgba(0, 206, 153, 0.3);
   box-shadow: none;
   background-color: transparent;
 }
@@ -2374,8 +2374,8 @@ notebook > header > tabs > arrow {
 
 notebook > header tab {
   transition: all 270ms cubic-bezier(0, 0, 0.2, 1), background-size 0, background-image 0;
-  min-height: 20px;
-  min-width: 20px;
+  min-height: 14px;
+  min-width: 14px;
   padding: 6px 12px;
   outline-offset: -6px;
   border-width: 1px;
@@ -2721,8 +2721,8 @@ check,
 radio {
   min-height: 24px;
   min-width: 24px;
-  margin: -10px;
-  padding: 10px;
+  margin: -7px;
+  padding: 7px;
 }
 
 check:checked, check:indeterminate,
@@ -2824,8 +2824,8 @@ check:indeterminate {
 
 
 radio {
-  border-image-slice: 22;
-  border-image-width: 22px;
+  border-image-slice: 19;
+  border-image-width: 19px;
 }
 
 
@@ -2845,12 +2845,12 @@ radio {
 
 
 radio:checked:not(:indeterminate) {
-  border-image-source: -gtk-gradient(radial, center center, 0, center center, 0.11364, to(#FFAC00), to(transparent));
+  border-image-source: -gtk-gradient(radial, center center, 0, center center, 0.13158, to(#FFAC00), to(transparent));
 }
 
 
 radio:checked:not(:indeterminate):disabled {
-  border-image-source: -gtk-gradient(radial, center center, 0, center center, 0.11364, to(rgba(255, 172, 0, 0.5)), to(transparent));
+  border-image-source: -gtk-gradient(radial, center center, 0, center center, 0.13158, to(rgba(255, 172, 0, 0.5)), to(transparent));
 }
 
 window.background:not(.csd) > widget > checkbutton > check,
@@ -2999,8 +2999,8 @@ treeview.view radio:checked {
  * GtkScale *
  ************/
 scale {
-  min-height: 8px;
-  min-width: 8px;
+  min-height: 2px;
+  min-width: 2px;
   padding: 12px;
 }
 
@@ -3254,12 +3254,12 @@ progressbar {
 
 progressbar.horizontal trough,
 progressbar.horizontal progress {
-  min-height: 4px;
+  min-height: 2px;
 }
 
 progressbar.vertical trough,
 progressbar.vertical progress {
-  min-width: 4px;
+  min-width: 2px;
 }
 
 progressbar trough {
@@ -3278,11 +3278,11 @@ progressbar trough.empty progress {
  * Level Bar *
  *************/
 levelbar.horizontal block {
-  min-height: 4px;
+  min-height: 2px;
 }
 
 levelbar.horizontal.discrete block {
-  min-width: 32px;
+  min-width: 26px;
 }
 
 levelbar.horizontal.discrete block:not(:last-child) {
@@ -3290,11 +3290,11 @@ levelbar.horizontal.discrete block:not(:last-child) {
 }
 
 levelbar.vertical block {
-  min-width: 4px;
+  min-width: 2px;
 }
 
 levelbar.vertical.discrete block {
-  min-height: 32px;
+  min-height: 26px;
 }
 
 levelbar.vertical.discrete block:not(:last-child) {
@@ -3599,7 +3599,7 @@ messagedialog.background {
 }
 
 messagedialog .titlebar {
-  min-height: 20px;
+  min-height: 14px;
   border-style: none;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.4);
   background-color: #FAFAFA;
@@ -3611,8 +3611,8 @@ messagedialog .titlebar:backdrop {
 }
 
 messagedialog.csd.background {
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
 }
 
 messagedialog.csd .dialog-action-area button {
@@ -3622,11 +3622,11 @@ messagedialog.csd .dialog-action-area button {
 }
 
 messagedialog.csd .dialog-action-area button:first-child {
-  border-bottom-left-radius: 8px;
+  border-bottom-left-radius: 2px;
 }
 
 messagedialog.csd .dialog-action-area button:last-child {
-  border-bottom-right-radius: 8px;
+  border-bottom-right-radius: 2px;
 }
 
 filechooser .dialog-action-box {
@@ -3848,19 +3848,19 @@ infobar.info > label, infobar.info, infobar.question > label, infobar.question, 
  * Tooltips *
  ************/
 tooltip {
-  border-radius: 8px;
+  border-radius: 2px;
   box-shadow: none;
 }
 
 tooltip.background, tooltip.background.csd {
-  border-radius: 8px;
+  border-radius: 2px;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.4);
   background-color: rgba(252, 252, 252, 0.9);
 }
 
 tooltip:not(.csd):not(.unity-csd) {
   border: 1px solid rgba(0, 0, 0, 0.08);
-  border-radius: 8px;
+  border-radius: 2px;
   background-clip: padding-box;
 }
 
@@ -3997,7 +3997,7 @@ colorchooser .popover.osd:backdrop {
  **********************/
 decoration {
   transition: box-shadow 180ms cubic-bezier(0, 0, 0.2, 1);
-  border-radius: 8px;
+  border-radius: 2px;
   box-shadow: 0 14px 14px rgba(0, 0, 0, 0.25), 0 10px 5px rgba(0, 0, 0, 0.22), 0 16px 16px transparent;
   margin: 8px;
 }
@@ -4025,17 +4025,17 @@ decoration:backdrop {
 }
 
 .csd.popup decoration {
-  border-radius: 8px;
+  border-radius: 2px;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1), 0 3px 3px rgba(0, 0, 0, 0.15);
 }
 
 tooltip.csd decoration {
-  border-radius: 8px;
+  border-radius: 2px;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1), 0 3px 3px rgba(0, 0, 0, 0.15);
 }
 
 messagedialog.csd decoration {
-  border-radius: 8px;
+  border-radius: 2px;
 }
 
 .solid-csd decoration {
@@ -4384,8 +4384,8 @@ stackswitcher button.text-button {
 
 stackswitcher button.circular,
 stackswitcher button.text-button.circular {
-  min-width: 32px;
-  min-height: 32px;
+  min-width: 26px;
+  min-height: 26px;
   padding: 0;
 }
 
@@ -4411,7 +4411,7 @@ button.emoji-section {
   margin-top: -1px;
   padding: 0 8px;
   min-width: 24px;
-  min-height: 32px;
+  min-height: 26px;
   border-radius: 0;
   outline-offset: -6px;
   box-shadow: none;
@@ -4460,7 +4460,7 @@ button.emoji-section:last-child {
 .nautilus-window notebook,
 .nautilus-window notebook > stack {
   background-color: #fcfcfc;
-  border-radius: 0 0 8px 8px;
+  border-radius: 0 0 2px 2px;
   background-image: -gtk-scaled(url("assets/background-img-bottom.png"), url("assets/background-img-bottom@2.png"));
   background-repeat: no-repeat;
   background-position: top right;
@@ -4503,7 +4503,7 @@ button.emoji-section:last-child {
   border-style: solid solid none;
   border-width: 1px;
   border-color: rgba(0, 0, 0, 0.08);
-  border-radius: 8px 8px 0 0;
+  border-radius: 2px 2px 0 0;
   background-color: #fcfcfc;
   background-clip: padding-box;
   transition: all 270ms cubic-bezier(0, 0, 0.2, 1), border-width 0;
@@ -4513,18 +4513,18 @@ button.emoji-section:last-child {
   margin-right: 7px;
   border-left-style: none;
   border-top-left-radius: 0;
-  border-bottom-left-radius: 8px;
+  border-bottom-left-radius: 2px;
 }
 
 .nautilus-window .floating-bar.bottom.right {
   margin-left: 7px;
   border-right-style: none;
   border-top-right-radius: 0;
-  border-bottom-right-radius: 8px;
+  border-bottom-right-radius: 2px;
 }
 
 .nautilus-window .floating-bar button {
-  margin: 6px;
+  margin: 9px;
 }
 
 .nautilus-window.maximized .floating-bar {
@@ -4630,7 +4630,7 @@ filechooser.csd.background, filechooser placessidebar,
 .nautilus-window.csd.background,
 .nautilus-window placessidebar {
   background-color: rgba(250, 250, 250, 0.97);
-  border-radius: 0 0 8px 8px;
+  border-radius: 0 0 2px 2px;
 }
 
 filechooser.maximized placessidebar,
@@ -4736,8 +4736,8 @@ filechooser placessidebar.sidebar row.sidebar-row:selected:hover,
 }
 
 .gedit-search-slider entry:dir(ltr) {
-  margin-right: -58px;
-  padding-right: 58px;
+  margin-right: -46px;
+  padding-right: 46px;
 }
 
 .gedit-search-slider entry:dir(ltr) .gedit-search-entry-occurrences-tag {
@@ -4749,8 +4749,8 @@ filechooser placessidebar.sidebar row.sidebar-row:selected:hover,
 }
 
 .gedit-search-slider entry:dir(rtl) {
-  margin-left: -58px;
-  padding-left: 58px;
+  margin-left: -46px;
+  padding-left: 46px;
 }
 
 .gedit-search-slider entry:dir(rtl) .gedit-search-entry-occurrences-tag {
@@ -4896,7 +4896,7 @@ layouttabbar {
 }
 
 layouttabbar > box > button {
-  margin: 4px 0;
+  margin: 7px 0;
 }
 
 layouttab {
@@ -5050,8 +5050,8 @@ docktabstrip {
 
 docktab {
   transition: all 270ms cubic-bezier(0, 0, 0.2, 1), background-size 0, background-image 0;
-  min-height: 20px;
-  min-width: 20px;
+  min-height: 14px;
+  min-width: 14px;
   margin-bottom: -1px;
   padding: 6px 6px;
   outline-offset: -6px;
@@ -5133,16 +5133,16 @@ window.workbench preferences preferencesgroup list entry {
 }
 
 button.run-arrow-button {
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 button.dzlmenubutton image {
-  min-width: 26px;
+  min-width: 20px;
 }
 
 button.dzlmenubutton image.arrow {
-  min-width: 23px;
+  min-width: 17px;
 }
 
 button.dzlmenubuttonitem {
@@ -5335,7 +5335,7 @@ headerbar > button.flat.popup.title-menu-button.toggle > grid .subtitle {
 }
 
 window.background > box.vertical box.horizontal list.categories {
-  border-radius: 0 0 0 8px;
+  border-radius: 0 0 0 2px;
 }
 
 window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list > separator {
@@ -5400,7 +5400,7 @@ window.background > box.vertical box.horizontal > box.vertical > scrolledwindow 
   *  Gnome Tweak Tool  *
   **********************/
 .tweak-categories {
-  border-radius: 0 0 0 8px;
+  border-radius: 0 0 0 2px;
 }
 
 .tweak-titlebar-right > switch,
@@ -5448,7 +5448,7 @@ taskrow image {
 }
 
 task-list-view > box > revealer > box > button {
-  margin: -4px;
+  margin: -1px;
 }
 
 /*******
@@ -5506,7 +5506,7 @@ list.categories {
  * Calculator *
  **************/
 button.title label {
-  min-height: 32px;
+  min-height: 26px;
 }
 
 /*********
@@ -5557,7 +5557,7 @@ overlay > revealer.right > scrolledwindow.frame {
 }
 
 button.image-button.session-new-button {
-  min-width: 28px;
+  min-width: 22px;
 }
 
 /***********
@@ -5859,7 +5859,7 @@ UnityDecoration {
 UnityDecoration .top {
   padding: 0 2px;
   border-style: none;
-  border-radius: 8px 8px 0 0;
+  border-radius: 2px 2px 0 0;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.4);
   background-color: #FFFFFF;
   color: rgba(0, 0, 0, 0.75);
@@ -5988,7 +5988,7 @@ MatePanelAppletFrameDBus {
 }
 
 .mate-panel-menu-bar menubar menu > menuitem {
-  min-height: 28px;
+  min-height: 22px;
   padding: 0 6px;
 }
 
@@ -6135,7 +6135,7 @@ na-tray-applet {
 
 #mate-menu entry + button {
   margin: 0 4px 8px;
-  padding: 4px;
+  padding: 1px;
 }
 
 /*********************
@@ -6299,7 +6299,7 @@ na-tray-applet {
 }
 
 .budgie-popover:not(.budgie-menu) button.flat:not(.image-button) {
-  min-height: 28px;
+  min-height: 22px;
   padding: 0 8px;
   color: rgba(0, 0, 0, 0.75);
   font-weight: normal;
@@ -6694,7 +6694,7 @@ frame.raven-frame > border {
 }
 
 .raven .raven-header {
-  min-height: 32px;
+  min-height: 26px;
   padding: 3px;
 }
 
@@ -6710,7 +6710,7 @@ frame.raven-frame > border {
 
 .raven .raven-header.top stackswitcher button {
   margin: -6px 0;
-  min-height: 32px;
+  min-height: 26px;
 }
 
 .raven .raven-header.top button.image-button:dir(ltr) {
@@ -6754,7 +6754,7 @@ frame.raven-frame > border {
 }
 
 .raven .raven-background grid > label:first-child {
-  min-height: 32px;
+  min-height: 26px;
 }
 
 .raven scrolledwindow.raven-background {
@@ -6773,7 +6773,7 @@ frame.raven-frame > border {
 
 .raven .powerstrip button {
   margin: 2px 0 1px;
-  padding: 10px;
+  padding: 7px;
 }
 
 .raven .option-subtitle {
@@ -6800,7 +6800,7 @@ calendar.raven-calendar:selected {
 }
 
 .raven-mpris button.image-button {
-  padding: 10px;
+  padding: 7px;
 }
 
 .budgie-notification-window, .budgie-osd-window, .budgie-switcher-window {

@@ -13,18 +13,18 @@ $hint_opacity: 0.6;
 $disabled_opacity: 0.5;
 
 // sizes
-$small_size: if($compact == 'false', 24px, 20px);
-$medium_size: if($compact == 'false', 36px, 32px);
-$large_size: if($compact == 'false', 48px, 44px);
+$small_size: if($compact == 'false', 18px, 14px);
+$medium_size: if($compact == 'false', 30px, 26px);
+$large_size: if($compact == 'false', 42px, 38px);
 
 $container_padding: 6px;
 
-$bar_size: 4px;
-$menuitem_size: 28px;
+$bar_size: 2px;
+$menuitem_size: 22px;
 
 // radiuses
 $buttons_radius: 6px;
-$windows_radius: 8px;
+$windows_radius: 2px;
 $material_radius: 4px;
 $circular_radius: 9999px;
 $square_radius: if($radius == 'circle', $circular_radius, $windows_radius);

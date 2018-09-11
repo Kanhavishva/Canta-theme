@@ -14,7 +14,7 @@ fi
 
 SRC_DIR=$(cd $(dirname $0) && pwd)
 
-THEME_NAME=Canta
+THEME_NAME=Canta-K
 COLOR_VARIANTS=('' '-dark' '-light')
 SIZE_VARIANTS=('' '-compact')
 RADIUS_VARIANTS=('' '-square')
